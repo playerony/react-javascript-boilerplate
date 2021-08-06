@@ -9,7 +9,7 @@
     "build": "yarn build:clean && yarn build:dist",
     "build:clean": "rimraf dist",
     "build:dist": "yarn webpack --config webpack/webpack.config.js --env mode=production",
-    "check": "yarn prettier:check && yarn lint && yarn commitlint && yarn build",
+    "check": "yarn prettier:check && yarn lint && yarn commitlint && yarn test && yarn build",
     "commitlint": "commitlint -- --from=main",
     "lint": "eslint src --ext .js,.jsx",
     "lint:fix": "yarn lint --fix",
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
     "copy-webpack-plugin": "^9.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -41,7 +42,7 @@
     "@babel/preset-react": "^7.14.5",
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
-    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
     "babel-jest": "^27.0.6",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.2.0",
@@ -68,8 +69,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm test",
-      "pre-commit": "lint-staged && npm test"
+      "pre-push": "yarn test",
+      "pre-commit": "lint-staged && yarn test"
     }
   },
   "volta": {
