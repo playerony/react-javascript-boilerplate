@@ -1,9 +1,9 @@
-name: typecheck
+name: prettier
 
 on: push
 
 jobs:
-  typecheck:
+  prettier:
     runs-on: ubuntu-latest
 
     steps:
