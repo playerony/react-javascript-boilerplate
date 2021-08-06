@@ -8,7 +8,7 @@ function localIdentName({ mode }) {
   return '[path][name]__[local]';
 }
 
-const getModeConfiguration = (env) => require(`./webpack/webpack.${env.mode}`)(env) || {};
+const getModeConfiguration = (env) => require(`./webpack.${env.mode}`)(env) || {};
 
 const defaultEnvironmentVariables = { mode: 'production' };
 
@@ -31,8 +31,8 @@ module.exports = ({ mode = defaultEnvironmentVariables.mode } = defaultEnvironme
         rules: [
           {
             test: /\.jsx?$/,
-            exclude: /node_modules/,
             loader: 'babel-loader',
+            exclude: /node_modules/,
           },
           {
             test: /\.css$/,

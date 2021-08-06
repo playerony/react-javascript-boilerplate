@@ -8,6 +8,7 @@
 
 dist
 .husky
+coverage
 .DS_Store
 yarn.lock
 .gitignore
