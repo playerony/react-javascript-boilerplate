@@ -1,0 +1,8 @@
+*.png
+*.txt
+*.ttf
+*.ico
+*.woff
+*.woff2
+
+.DS_Store

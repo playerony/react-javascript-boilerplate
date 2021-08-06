@@ -1,0 +1,52 @@
+{
+  "name": "react-javascript-boilerplate",
+  "version": "1.0.0",
+  "description": "Minimal javascript boilerplate for React apps",
+  "license": "MIT",
+  "author": "Paweł Wojtasiński <pawel.wojtasinski.1995@gmail.com>",
+  "repository": "git@github.com:playerony/react-javascript-boilerplate.git",
+  "main": "index.js",
+  "scripts": {
+    "check": "yarn prettier:check && yarn lint",
+    "lint": "eslint src --ext .js,.jsx",
+    "lint:fix": "yarn lint --fix",
+    "prepare": "husky install",
+    "prettier": "prettier",
+    "prettier:check": "yarn prettier --check \"src/**/*\" \"public/**/*\"",
+    "prettier:format": "yarn prettier --write \"src/**/*\" \"public/**/*\""
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/eslint-parser": "^7.15.0",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": ">=6",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2",
+    "prettier-package-json": "^2.6.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "volta": {
+    "node": "14.17.4",
+    "yarn": "1.22.11"
+  }
+}
