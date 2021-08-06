@@ -17,3 +17,8 @@ body {
   display: grid;
   grid-template-rows: auto 1fr;
 }
+
+.title {
+  margin: 0;
+  padding: 0;
+}

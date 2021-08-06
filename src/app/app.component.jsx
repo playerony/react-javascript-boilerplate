@@ -1,3 +1,9 @@
-import './app.styles.css';
+import React from 'react';
 
-export const App = () => <h1>react-javascript-boilerplate</h1>;
+import cls from './app.styles.css';
+
+export const App = () => {
+  console.log(cls);
+
+  return <h1 className={cls.title}>react-javascript-boilerplate</h1>;
+};

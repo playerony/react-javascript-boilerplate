@@ -3,6 +3,14 @@
 *.ttf
 *.ico
 *.woff
+*.json
 *.woff2
 
+dist
+.husky
 .DS_Store
+yarn.lock
+.gitignore
+.eslintcache
+.lintstagedrc
+.prettierignore
