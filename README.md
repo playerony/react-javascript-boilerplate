@@ -18,6 +18,8 @@ Minimal javascript boilerplate for React apps
   - [Build](#build)
   - [Test](#test)
   - [Analyze](#analyze)
+- [📚 Documentation](#user-content--documentation)
+  - [Commit Message Guideline](#commit-message-guideline)
 
 ## ✨ Getting started
 
@@ -26,7 +28,6 @@ Minimal javascript boilerplate for React apps
 You need to have installed the following software:
 
 - [nodejs](https://nodejs.org/en/) (>=14.15.0)
-- [npm](https://npmjs.com/) (>= 6.14.0)
 - [yarn](https://npmjs.com/) (>= 1.22.10)
 
 ### Bootstrap
@@ -64,3 +65,10 @@ You need to have installed the following software:
 - `prettier:check` - Run `prettier` with `--check` flag. Output any format errors 🚨.
 - `commitlint` - Run `commitlint`. Output any errors 🚨.
 - `check` - Run `lint`, `commitlint`, `build`, `prettier:check` and `test`. Output any errors 🚨.
+
+## 📚 Documentation
+
+### Commit Message Guideline
+
+- For easier commit type recognition commit messages are prefixed with a proper type
+- See available commit types: [https://www.npmjs.com/package/@commitlint/config-conventional](https://www.npmjs.com/package/@commitlint/config-conventional)
