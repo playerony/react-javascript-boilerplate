@@ -3,11 +3,11 @@
 *.ttf
 *.ico
 *.woff
-*.json
 *.woff2
 
 dist
 .husky
+scripts
 coverage
 .DS_Store
 yarn.lock

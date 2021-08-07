@@ -18,5 +18,5 @@ jobs:
       - name: yarn install
         run: yarn install
 
-      - run: yarn prettier:check
-        name: yarn prettier:check
+      - run: yarn format:check
+        name: yarn format:check

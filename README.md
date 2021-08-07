@@ -16,6 +16,7 @@ Minimal javascript boilerplate for React apps
 - [📜 Scripts](#user-content--scripts)
   - [Development](#development)
   - [Build](#build)
+  - [Shell](#shell)
   - [Test](#test)
   - [Analyze](#analyze)
 - [📚 Documentation](#user-content--documentation)
@@ -48,6 +49,13 @@ You need to have installed the following software:
 
 - `build` - Build for production a ready application.
 
+### Shell
+
+- `clean-node-modules` - Remove node_modules directory with rimraf command.
+- `reinstall-node-modules` - Invokes `clean-node-modules` and `yarn install`.
+- `gcb` - (git-create-branch) Create and checkout on the branch with the given name.
+- `gpc` - (git-push-changes) Commit and push all files on a current branch with the given commit message.
+
 ### Test
 
 - `test` - Run tests.
@@ -60,11 +68,10 @@ You need to have installed the following software:
 
 - `lint` - Run `eslint`. Output any errors 🚨.
 - `lint:fix` - Run `eslint` with `--fix`flag . Fix any lint errors 🚨.
-- `typecheck` - Run `tsc`. Output any errors 🚨.
-- `prettier:format` - Run `prettier` with `--write` flag to format all the files.
-- `prettier:check` - Run `prettier` with `--check` flag. Output any format errors 🚨.
 - `commitlint` - Run `commitlint`. Output any errors 🚨.
-- `check` - Run `lint`, `commitlint`, `build`, `prettier:check` and `test`. Output any errors 🚨.
+- `format` - Run `prettier` with `--write` flag to format all the files.
+- `format:check` - Run `prettier` with `--check` flag. Output any format errors 🚨.
+- `check` - Run `lint`, `test`, `build`, `commitlint` and `format:check`. Output any errors 🚨.
 
 ## 📚 Documentation
 
