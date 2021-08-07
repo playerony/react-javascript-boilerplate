@@ -1,2 +1,2 @@
-yarn run clean-node-modules
+yarn run remove-node-modules
 yarn install

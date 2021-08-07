@@ -13,5 +13,5 @@ if [ -n "$exists" ]; then
   exit 1
 fi
 
-git branch $branch
-git checkout $branch
+git branch $branchName
+git checkout $branchName
