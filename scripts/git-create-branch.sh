@@ -1,14 +1,14 @@
-branch="$1"
+branchName="$1"
 
-if [ -z "$branch" ]; then
-  echo 'Error: branch was not specified!'
+if [ -z "$branchName" ]; then
+  echo 'Error: branch name was not specified!'
 
   exit 1
 fi
 
-exists=`git show-ref refs/heads/$branch`
+exists=`git show-ref refs/heads/$branchName`
 if [ -n "$exists" ]; then
-  echo 'Error: branch already exists!'
+  echo "Error: "$branchName" branch already exists!"
 
   exit 1
 fi
