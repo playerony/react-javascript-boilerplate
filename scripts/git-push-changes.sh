@@ -6,7 +6,7 @@ if [ -z "$commitMessage" ]; then
   exit 1
 fi
 
-git add -A
+git add .
 echo "Staged all files"
 
 git commit -m "$commitMessage"

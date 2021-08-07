@@ -9,6 +9,8 @@ fi
 exists=`git show-ref refs/heads/$branch`
 if [ -n "$exists" ]; then
   echo 'Error: branch already exists!'
+
+  exit 1
 fi
 
 git branch $branch
