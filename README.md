@@ -16,6 +16,7 @@ Minimal javascript boilerplate for React apps
 - [📜 Scripts](#user-content--scripts)
   - [Development](#development)
   - [Build](#build)
+  - [Shell](#shell)
   - [Test](#test)
   - [Analyze](#analyze)
 - [📚 Documentation](#user-content--documentation)
@@ -47,6 +48,13 @@ You need to have installed the following software:
 ### Build
 
 - `build` - Build for production a ready application.
+
+### Shell
+
+- `clean-node-modules` - Remove node_modules directory with rimraf command.
+- `reinstall-node-modules` - Invokes `clean-node-modules` and `yarn install`.
+- `gcb` - (git-create-branch) Create and checkout on the branch with the given name.
+- `gpc` - (git-push-changes) Commit and push all files on a current branch with the given commit message.
 
 ### Test
 
