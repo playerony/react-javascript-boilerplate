@@ -6,7 +6,7 @@
 ![Prettier](https://github.com/playerony/react-javascript-boilerplate/workflows/prettier/badge.svg)
 ![Commitlint](https://github.com/playerony/react-javascript-boilerplate/workflows/commitlint/badge.svg)
 
-Minimal javascript boilerplate for React apps
+Minimal javascript boilerplate for React apps.
 
 ## 📖 Table of Contents
 
@@ -29,13 +29,13 @@ Minimal javascript boilerplate for React apps
 You need to have installed the following software:
 
 - [nodejs](https://nodejs.org/en/) (>=14.15.0)
-- [yarn](https://npmjs.com/) (>= 1.22.10)
+- [yarn](https://yarnpkg.com/) (>= 1.22.10)
 
 ### Bootstrap
 
 ```bash
-  git clone --depth 1 https://github.com/playerony/react-javascript-boilerplate my-lib
-  cd my-lib
+  git clone --depth 1 https://github.com/playerony/react-javascript-boilerplate my-app
+  cd my-app
   yarn install
 ```
 
@@ -51,8 +51,8 @@ You need to have installed the following software:
 
 ### Shell
 
-- `clean-node-modules` - Remove node_modules directory with rimraf command.
-- `reinstall-node-modules` - Invokes `clean-node-modules` and `yarn install`.
+- `remove-node-modules` - Remove node_modules directory with rimraf command.
+- `reinstall-node-modules` - Invokes `remove-node-modules` and `yarn install`.
 - `gcb` - (git-create-branch) Create and checkout on the branch with the given name.
 - `gpc` - (git-push-changes) Commit and push all files on a current branch with the given commit message.
 
