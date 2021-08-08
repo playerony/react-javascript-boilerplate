@@ -1,5 +1,6 @@
 const path = require('path');
 const webpackMerge = require('webpack-merge').default;
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 function localIdentName({ mode }) {
@@ -20,7 +21,6 @@ module.exports = ({ mode = defaultEnvironmentVariables.mode } = defaultEnvironme
         app: [path.resolve('src/index.jsx')],
       },
       output: {
-        publicPath: '/',
         filename: '[name].[fullhash].js',
         chunkFilename: '[name].[contenthash].js',
       },
@@ -56,6 +56,9 @@ module.exports = ({ mode = defaultEnvironmentVariables.mode } = defaultEnvironme
       plugins: [
         new HtmlWebpackPlugin({
           template: 'public/index.html',
+        }),
+        new CopyWebpackPlugin({
+          patterns: [{ from: 'public', to: 'public' }],
         }),
       ],
     },
