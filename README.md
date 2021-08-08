@@ -54,6 +54,7 @@ You need to have installed the following software:
 - `remove-node-modules` - Remove node_modules directory with rimraf command.
 - `reinstall-node-modules` - Invokes `remove-node-modules` and `yarn install`.
 - `gcb` - (git-create-branch) Create and checkout on the branch with the given name.
+- `gcmwp` - (git-checkout-main-with-pull) Checkout to main branch and invokes pull command.
 - `gpc` - (git-push-changes) Commit and push all files on a current branch with the given commit message.
 
 ### Test

@@ -58,7 +58,14 @@ module.exports = ({ mode = defaultEnvironmentVariables.mode } = defaultEnvironme
           template: 'public/index.html',
         }),
         new CopyWebpackPlugin({
-          patterns: [{ from: 'public', to: 'public' }],
+          patterns: [
+            {
+              from: 'public/*.{txt,css,ico,png,json}',
+            },
+            {
+              from: 'public/assets/**/*',
+            },
+          ],
         }),
       ],
     },
