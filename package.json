@@ -1,10 +1,10 @@
 {
-  "name": "react-javascript-boilerplate",
+  "name": "app-shortcut",
   "version": "1.0.0",
-  "description": "Minimal javascript boilerplate for React apps",
+  "description": "<app-description>",
   "license": "MIT",
-  "author": "Paweł Wojtasiński <pawel.wojtasinski.1995@gmail.com>",
-  "repository": "git@github.com:playerony/react-javascript-boilerplate.git",
+  "author": "<app-author>",
+  "repository": "<app-repository>",
   "scripts": {
     "build": "yarn build:clean && yarn build:dist",
     "build:clean": "rimraf dist",

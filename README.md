@@ -1,4 +1,4 @@
-# React Javascript Boilerplate
+# <app-name>
 
 ![Lint](https://github.com/playerony/react-javascript-boilerplate/workflows/lint/badge.svg)
 ![Test](https://github.com/playerony/react-javascript-boilerplate/workflows/test/badge.svg)
@@ -6,7 +6,7 @@
 ![Prettier](https://github.com/playerony/react-javascript-boilerplate/workflows/prettier/badge.svg)
 ![Commitlint](https://github.com/playerony/react-javascript-boilerplate/workflows/commitlint/badge.svg)
 
-Minimal javascript boilerplate for React apps.
+<app-description>
 
 ## 📖 Table of Contents
 
@@ -36,7 +36,7 @@ You need to have installed the following software:
 ```bash
   git clone --depth 1 https://github.com/playerony/react-javascript-boilerplate my-app
   cd my-app
-  yarn install
+  bash ./scripts/setup-project.sh
 ```
 
 ## 📜 Scripts:

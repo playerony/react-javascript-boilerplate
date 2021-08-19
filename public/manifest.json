@@ -1,6 +1,6 @@
 {
-  "short_name": "react javascript boilerplate",
-  "name": "react javascript boilerplate",
+  "name": "<app-name>",
+  "short_name": "<app-name>",
   "icons": [
     {
       "src": "favicon.ico",
