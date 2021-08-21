@@ -44,10 +44,12 @@ You need to have installed the following software:
 ### Development
 
 - `dev` - Run application in development mode.
+- `docker:run` - Run created docker image.
 
 ### Build
 
 - `build` - Build for production a ready application.
+- `docker:build` - Docker build for production a ready application.
 
 ### Shell
 

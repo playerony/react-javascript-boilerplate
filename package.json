@@ -12,6 +12,8 @@
     "check": "yarn format:check && yarn lint && yarn commitlint && yarn test && yarn build",
     "commitlint": "commitlint -- --from=main",
     "dev": "yarn webpack serve --config webpack/webpack.config.js --hot --open --port 3030 --env mode=development",
+    "docker:build": "docker build -t static-app .",
+    "docker:run": "docker run -p 8080:80 static-app",
     "format": "yarn prettier --write \"**/*\"",
     "format:check": "yarn prettier --check \"**/*\"",
     "gcb": "bash ./scripts/git-create-branch.sh",
