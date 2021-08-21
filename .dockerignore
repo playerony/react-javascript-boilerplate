@@ -1,0 +1,9 @@
+.git/
+dist/
+.husky/
+.github/
+scripts/
+coverage/
+node_modules/
+
+.DS_Store
