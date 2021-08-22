@@ -45,11 +45,12 @@ You need to have installed the following software:
 
 - `dev` - Run application in development mode.
 - `docker:run` - Run created docker image.
+- `docker-compose up` - Build and run docker image.
 
 ### Build
 
 - `build` - Build for production a ready application.
-- `docker:build` - Docker build for production a ready application.
+- `docker:build` - Docker build.
 
 ### Shell
 
